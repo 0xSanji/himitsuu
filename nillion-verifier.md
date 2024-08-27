@@ -47,7 +47,7 @@ fund your accuser address (accountId) with: https://faucet.testnet.nillion.com/
 YOU MUST WAIT 30-60 MINUTES TO CONTINUE WITH THE STEPS BELOW. The secret verification is designed wait for a period of time before fully registering the accuser.
 
 ```
-docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "http://51.89.195.146:26657" --block-start 5023281
+docker run -d --name nillion_verifier -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "http://51.89.195.146:26657" --block-start 5023281
 ```
 
 ## CheatSheet
@@ -56,4 +56,10 @@ docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accu
 
 ```
 cat $HOME/nillion/accuser/credentials.json
+```
+
+- Delete container
+
+```
+docker rm -f nillion_verifier
 ```
