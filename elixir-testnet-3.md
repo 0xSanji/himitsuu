@@ -54,7 +54,7 @@ docker run -d --env-file validator.env --name elixir -p 17690:17690 elixirprotoc
 Web : https://testnet-3.elixir.xyz/
 - Mint Mock
 - Stake
-- Delegate ke validator kita cari pake address reward
+- Delegate ke validator kita cari pake address validator
 
 wallet reward sama validator boleh beda, sama juga gpp sih buat keamanan aja dibedain di docs nya
 
