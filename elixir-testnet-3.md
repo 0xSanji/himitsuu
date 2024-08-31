@@ -65,6 +65,11 @@ Dono cik
 ```
 docker stop elixir && docker rm elixir
 ```
+- Download images docker
+
+```
+docker pull elixirprotocol/validator:v3
+```
 
 - run ulang
 ```
