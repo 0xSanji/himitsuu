@@ -24,7 +24,7 @@ sudo usermod -aG docker $USER
 
 ## Download images docker
 ```
-docker pull elixirprotocol/validator:3.1.0
+docker pull elixirprotocol/validator:v3
 ```
 
 ## setup env
@@ -47,7 +47,7 @@ SIGNER_PRIVATE_KEY=<PK_WALLET_VALIDATOR>
 ## Run
 Jangan lupa isi wallet validatornya pake eth sepolia 
 ```
-docker run -d --env-file validator.env --name elixir --restart unless-stopped elixirprotocol/validator:3.1.0
+docker run -d --env-file validator.env --name elixir -p 17690:17690 elixirprotocol/validator:v3
 ```
 
 ## stake ke validator kita
@@ -59,3 +59,15 @@ Web : https://testnet-3.elixir.xyz/
 wallet reward sama validator boleh beda, sama juga gpp sih buat keamanan aja dibedain di docs nya
 
 Dono cik
+
+## Note untuk yang sudah run kemarin
+- remove container lama
+```
+docker stop elixir && docker rm elixir
+```
+
+- run ulang
+```
+cd $HOME/elixir
+docker run -d --env-file validator.env --name elixir -p 17690:17690 elixirprotocol/validator:v3
+```
