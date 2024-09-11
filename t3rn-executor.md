@@ -71,7 +71,7 @@ docker build -t executor-t3rn .
 
 - run docker
 ```
-docker run -d --env-file .env --restart always --name executor executor-t3rn
+docker run -d --restart always --name executor executor-t3rn
 ```
 
 - cek logs
