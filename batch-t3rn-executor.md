@@ -128,6 +128,7 @@ EOF
   # Run the Docker container with the .env file
   echo "Running Docker container '$CONTAINER_NAME' with .env file: $ENV_FILE_TEMPLATE"
   docker run -d \
+    --restart always \
     --name $CONTAINER_NAME \
     --env-file $ENV_FILE_TEMPLATE \
     -v "$(pwd)/entrypoint.sh:/app/entrypoint.sh" \
@@ -142,7 +143,6 @@ done
 rm executor-linux.tar.gz
 
 echo "All Docker containers are running."
-
 ```
 
 - permission file
