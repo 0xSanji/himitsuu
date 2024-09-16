@@ -209,7 +209,7 @@ if __name__ == '__main__':
     "nodeRpc": "https://allora-rpc.testnet-1.testnet.allora.network/",
     "maxRetries": 1,
     "delay": 1,
-    "submitTx": false
+    "submitTx": true
   },
   "worker": [
     {
