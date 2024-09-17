@@ -1,3 +1,8 @@
+- clone repo allora
+```
+git clone https://github.com/allora-network/allora-huggingface-walkthrough.git
+```
+
 - masuk ke folder allora nya
 
 ```cd allora-huggingface-walkthrough```
