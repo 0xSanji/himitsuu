@@ -45,9 +45,19 @@ source .bash_profile
 go version
 ```
 
+## Install Allorad (Opsional)
+```
+git clone https://github.com/allora-network/allora-chain.git
+
+cd allora-chain && make all
+
+allorad version
+```
+
 ## Worker Allora
 - clone repo allora
 ```
+cd $HOME
 git clone https://github.com/allora-network/allora-huggingface-walkthrough.git
 ```
 
@@ -369,7 +379,26 @@ if __name__ == '__main__':
 
 ```docker compose up -d --build```
 
-# dono
+### dono
 
-# Intinya semakin harga token yg di predict sepi yg nebak harusnya bisa gacor pointnya, makanya topic 10 dpt banyak point, kalo mulai sepi ganti lagi aja token di topic 10 sama jgn lupa run ./init.config
+### Intinya semakin harga token yg di predict sepi yg nebak harusnya bisa gacor pointnya, makanya topic 10 dpt banyak point, kalo mulai sepi ganti lagi aja token di topic 10 sama jgn lupa run ./init.config
 
+# CheatSheet
+### Edit config.json
+```
+nano config.json
+```
+ubah isi file kemudian jgn lupa run
+```
+./init.config
+```
+agar env terupdate
+
+### run ulang worker
+```
+docker compose down -v && docker compose up -d --build
+```
+### cek log worker 
+```
+docker logs -f worker
+```
