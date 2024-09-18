@@ -258,9 +258,9 @@ if __name__ == '__main__':
     "addressKeyName": "testkey",
     "addressRestoreMnemonic": "<SEED_PHRASE>",
     "gas": "1000000",
-    "gasAdjustment": 1.0,
-    "nodeRpc": "https://allora-rpc.testnet-1.testnet.allora.network/",
-    "maxRetries": 1,
+    "gasAdjustment": 1.5,
+    "nodeRpc": "https://rpc.ankr.com/allora_testnet",
+    "maxRetries": 5,
     "delay": 1,
     "submitTx": true
   },
