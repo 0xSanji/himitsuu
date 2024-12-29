@@ -24,7 +24,7 @@ function sleep(ms) {
 
 async function bridge(privateKey) {
   console.log("=========================================");
-  let arbProvider = `https://base-sepolia.blockpi.network/v1/rpc/public`;
+  let arbProvider = `https://sepolia.base.org`;
   const providerJSON = new ethers.providers.JsonRpcProvider(arbProvider);
   const wallet = new ethers.Wallet(privateKey, providerJSON);
   console.log(`Address: ${wallet.address}`);
@@ -33,7 +33,7 @@ async function bridge(privateKey) {
   );
 
   let addrBridge = "0x30A0155082629940d4bd9Cd41D6EF90876a0F1b5";
-  let amountBridge = parseEther("0.01");
+  let amountBridge = parseEther("0.1");
   console.log(`bridge amount ${formatEther(amountBridge)} ETH`);
 
   let dataBridge = `0x56591d596f707370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000062a459f164fbb4acf8be5e2fed615dd85baa407000000000000000000000000000000000000000000000000002386e0fc36d11400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002386f26fc10000`;
