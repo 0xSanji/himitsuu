@@ -19,7 +19,7 @@ nano batch.sh
 DEFAULT_NODE_ENV="testnet"
 DEFAULT_LOG_LEVEL="debug"
 DEFAULT_LOG_PRETTY="false"
-DEFAULT_ENABLED_NETWORKS="arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l1rn"
+DEFAULT_ENABLED_NETWORKS="base-sepolia,optimism-sepolia,l1rn"
 DEFAULT_CONTAINER_NAME="t3rn-executor-container"
 DEFAULT_VERSION="v0.31.0"  # Default version to download
 
