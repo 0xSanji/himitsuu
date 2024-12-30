@@ -112,7 +112,7 @@ docker build -t $IMAGE_NAME .
 
 # Run containers
 for i in "${!PRIVATE_KEY_ARRAY[@]}"; do
-  CONTAINER_NAME=executor-${1 + i}
+  CONTAINER_NAME=executor-$((i + 1))
   PRIVATE_KEY_LOCAL=${PRIVATE_KEY_ARRAY[$i]}
   
   # Create .env file with default values and user input
