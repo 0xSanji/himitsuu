@@ -122,13 +122,13 @@ LOG_LEVEL=$DEFAULT_LOG_LEVEL
 LOG_PRETTY=$DEFAULT_LOG_PRETTY
 PRIVATE_KEY_LOCAL=$PRIVATE_KEY_LOCAL
 ENABLED_NETWORKS=$DEFAULT_ENABLED_NETWORKS
-export EXECUTOR_PROCESS_ORDERS=true
-export EXECUTOR_PROCESS_CLAIMS=true
-export EXECUTOR_MAX_L3_GAS_PRICE=500
-export RPC_ENDPOINTS_ARBT='https://sepolia-rollup.arbitrum.io/rpc,https://endpoints.omniatech.io/v1/arbitrum/sepolia/public'
-export RPC_ENDPOINTS_BSSP='https://sepolia.base.org,https://base-sepolia-rpc.publicnode.com'
-export RPC_ENDPOINTS_BLSS='https://sepolia.blast.io,https://endpoints.omniatech.io/v1/blast/sepolia/public'
-export RPC_ENDPOINTS_OPSP='https://sepolia.optimism.io,https://endpoints.omniatech.io/v1/op/sepolia/public'
+EXECUTOR_PROCESS_ORDERS=true
+EXECUTOR_PROCESS_CLAIMS=true
+EXECUTOR_MAX_L3_GAS_PRICE=500
+RPC_ENDPOINTS_ARBT='https://sepolia-rollup.arbitrum.io/rpc,https://endpoints.omniatech.io/v1/arbitrum/sepolia/public'
+RPC_ENDPOINTS_BSSP='https://sepolia.base.org,https://base-sepolia-rpc.publicnode.com'
+RPC_ENDPOINTS_BLSS='https://sepolia.blast.io,https://endpoints.omniatech.io/v1/blast/sepolia/public'
+RPC_ENDPOINTS_OPSP='https://sepolia.optimism.io,https://endpoints.omniatech.io/v1/op/sepolia/public'
 EOF
 
   # Run the Docker container with the .env file
